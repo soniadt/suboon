@@ -4,25 +4,41 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>اشتراک من | Suboon</title>
-  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">صفحه اصلی</a></li>
-        <li><a href="subscriptions.html">اشتراک‌ها</a></li>
-        <li><a href="my-subscription.html">اشتراک من</a></li>
-        <li><a href="contact.html">ارتباط با ما</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <h1>اشتراک فعال شما</h1>
-    <section>
-      <h2>فیلیمو</h2>
-      <p>مدت زمان باقی‌مانده: <strong>۱۲ روز</strong></p>
-    </section>
-  </main>
+<body class="bg-gray-100 text-right">
+
+<header class="flex justify-between items-center px-6 py-4 bg-[#1e3a8a] text-white">
+  <div class="flex space-x-4 rtl:space-x-reverse">
+    <a href="index.html" class="hover:underline">صفحه اصلی</a>
+    <a href="subscriptions.html" class="hover:underline">اشتراک‌ها</a>
+    <a href="my-subscription.html" class="hover:underline">اشتراک من</a>
+    <a href="contact.html" class="hover:underline">ارتباط با ما</a>
+  </div>
+  <div class="text-center">
+    <img src="images/logo_white.png" alt="Suboon Logo" class="h-20 mx-auto" />
+  </div>
+  <div class="flex space-x-4 rtl:space-x-reverse">
+    <a href="login.html" class="hover:underline">ورود</a>
+    <a href="register.html" class="hover:underline font-semibold bg-white text-[#1e3a8a] px-3 py-1 rounded-md">ثبت‌نام</a>
+  </div>
+</header>
+
+<main class="max-w-3xl mx-auto mt-12 bg-white p-6 rounded-lg shadow">
+  <h1 class="text-2xl font-bold text-gray-800 mb-6">اشتراک فعال شما</h1>
+  <div class="flex items-center space-x-6 rtl:space-x-reverse border p-4 rounded-lg shadow-sm bg-gray-50">
+    <img src="images/filimo.png" alt="فیلیمو" class="w-16 h-16 object-contain" />
+    <div>
+      <h2 class="text-lg font-semibold text-gray-700">فیلیمو</h2>
+      <p class="text-sm text-gray-600">تاریخ پایان: ۱۴۰۴/۰۵/۱۲</p>
+      <p class="text-sm text-red-500 font-semibold">۱۲ روز باقی‌مانده</p>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-[#1e3a8a] text-white mt-20 py-4 text-center text-sm">
+  تهران، دانشگاه صنعتی شریف | ۰۲۱-۶۶۱۶۱
+</footer>
+
 </body>
 </html>
